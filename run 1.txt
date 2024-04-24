@@ -1,0 +1,33 @@
+1) 3folders-
+	c-clientrequest.java;s-searchserver.java;remotes-search.java,searchquery.java
+  	javac.\*\*.java 
+	java server.searchServer
+	java client.clientRequest
+2) 2folders, 1file 
+	calculator.idl;server-calculatorserver.java,calculatorimlp.java;client-calculatorclient.java
+	idlj -fall calculator.idl
+	javac.\*\*.java
+	orbd-ORBInitialPort 1050 -ORBInitialHost localhost
+	run server
+	copy paste -ORBInitialPort 1050 -ORBInitialHost localhost to link in both s,c
+
+3)main.c
+	gcc-fopenmp main.c -o output
+	.\output
+4)2 files
+	server.py;client.py
+	py server.py
+	py client.py
+5)2 files
+	server.py;client.py
+	py server.py
+	py client.py: 2-3 terminals
+	
+6)2 files
+	bully.py;ring.py
+	py bully.py
+	py ring.py
+7)1 folder 2 files
+	template: index.html,result.html;api.py;app.py
+	py api.py
+	py app.py
